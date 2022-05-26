@@ -1,14 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.scss'
-// import { SideBar } from './components/SideBar/SideBar'
+import Layout from './components/Layout/Layout'
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route>
-
-        </Route>
+        <Route path="/" element={<Layout />} />
       </Routes>
     </div>
   )

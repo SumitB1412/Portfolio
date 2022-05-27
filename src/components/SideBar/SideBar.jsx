@@ -31,20 +31,12 @@ const SideBar = () => {
       </nav>
       <ul>
         <li>
-          <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://www.linkedin.com/in/sumit-beniwal-987595232/">
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/bobangajicsm"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/SumitB1412">
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>

@@ -88,6 +88,7 @@ const Navbar = () => {
       <ul className="hidden md:flex">
         <li>
           <FormControlLabel
+            style={{marginTop:"-10px"}}
             onClick={handleTheme}
             control={<MaterialUISwitch sx={{ m: 1 }} />}
           />

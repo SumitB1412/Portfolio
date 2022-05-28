@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeProvider";
 
 const Work = () => {
+  const { theme } = useContext(ThemeContext);
+  let bg;
+  let text;
+
+  if (theme) {
+    bg = "#fff";
+    text = "#000";
+  }
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
+    <div
+      style={{ background: bg, color: text }}
+      name="work"
+      className="w-full md:h-screen text-gray-300 bg-[#0a192f]"
+    >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
@@ -21,7 +34,7 @@ const Work = () => {
           >
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100">
-            <span className="text-2xl font-bold text-white tracking-wider">
+              <span className="text-2xl font-bold text-white tracking-wider">
                 Zappos
               </span>
               <div className="pt-8 text-center">

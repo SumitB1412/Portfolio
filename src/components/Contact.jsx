@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from 'react-icons/hi';
-
+import { HiOutlineMail } from "react-icons/hi";
+import { ThemeContext } from "../contexts/ThemeProvider";
 
 const Contact = () => {
+  const { theme } = useContext(ThemeContext);
+  let bg;
+  let text;
+
+  if (theme) {
+    bg = "#fff";
+    text = "#000";
+  }
   return (
     <div
+      style={{ background: bg, color: text }}
       name="contact"
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
@@ -15,31 +24,33 @@ const Contact = () => {
           Contact
         </p>
       </div>
-      <div style={{marginTop:"300px",marginLeft:"-130px"}}>
-        <div style={{margin:"20px 0px"}}>
+      <div style={{ marginTop: "300px", marginLeft: "-130px" }}>
+        <div style={{ margin: "20px 0px" }}>
           <a
             className="flex  items-center w-full text-gray-300"
             href="https://www.linkedin.com/in/sumit-beniwal-987595232/"
           >
-            <FaLinkedin style={{marginRight:"10px"}} size={30} /> https://www.linkedin.com/in/sumit-beniwal-987595232/
+            <FaLinkedin style={{ marginRight: "10px" }} size={30} />{" "}
+            https://www.linkedin.com/in/sumit-beniwal-987595232/
           </a>
-
         </div>
-        <div style={{margin:"20px 0px"}}>
+        <div style={{ margin: "20px 0px" }}>
           <a
             className="flex  items-center w-full text-gray-300"
             href="https://github.com/SumitB1412"
           >
-             <FaGithub style={{marginRight:"10px"}} size={30} /> https://github.com/SumitB1412
+            <FaGithub style={{ marginRight: "10px" }} size={30} />{" "}
+            https://github.com/SumitB1412
           </a>
         </div>
-        <div style={{margin:"20px 0px"}}>
-        <a
-              className='flex  items-center w-full text-gray-300'
-              href='mailto:beniwalsumit1412@gmail.com'
-            >
-               <HiOutlineMail style={{marginRight:"10px"}} size={32} /> beniwalsumit1412@gmail.com
-            </a>
+        <div style={{ margin: "20px 0px" }}>
+          <a
+            className="flex  items-center w-full text-gray-300"
+            href="mailto:beniwalsumit1412@gmail.com"
+          >
+            <HiOutlineMail style={{ marginRight: "10px" }} size={32} />{" "}
+            beniwalsumit1412@gmail.com
+          </a>
         </div>
       </div>
     </div>

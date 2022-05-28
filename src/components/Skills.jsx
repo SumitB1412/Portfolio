@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import HTML from '../assets/html.png';
 import CSS from '../assets/css.png';
@@ -8,10 +8,19 @@ import Node from '../assets/node.png';
 import Mongo from '../assets/mongo.png';
 import Redux from '../assets/reduxlogo.jpg';
 import Express from '../assets/expressIcon.png';
+import { ThemeContext } from '../contexts/ThemeProvider';
 
 const Skills = () => {
+    const { theme } = useContext(ThemeContext);
+  let bg;
+  let text;
+
+  if (theme) {
+    bg = "#fff";
+    text = "#000";
+  }
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div  style={{ background: bg, color: text }} name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
           <div>

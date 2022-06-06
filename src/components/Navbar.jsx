@@ -96,27 +96,27 @@ const Navbar = () => {
           />
         </li>
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link className="hover:border-b-2 border-pink-600" to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link className="hover:border-b-2 border-pink-600" to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
+          <Link className="hover:border-b-2 border-pink-600" to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
+          <Link className="hover:border-b-2 border-pink-600" to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link className="hover:border-b-2 border-pink-600" to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
@@ -170,6 +170,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://www.linkedin.com/in/sumit-beniwal-987595232/"
+              target='_blank' rel="noreferrer"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
@@ -178,6 +179,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/SumitB1412"
+              target='_blank' rel="noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
@@ -186,6 +188,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="mailto:beniwalsumit1412@gmail.com"
+              target='_blank' rel="noreferrer"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -194,6 +197,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href="https://drive.google.com/file/d/1l70vjJ83xMJ8eSqskjNUmwK0fKlSYn6H/view?usp=sharing"
+              target='_blank' rel="noreferrer"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

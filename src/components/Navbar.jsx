@@ -92,7 +92,6 @@ const Navbar = () => {
             style={{marginTop:"-10px"}}
             onClick={handleTheme}
             control={<MaterialUISwitch sx={{ m: 1 }} />}
-            defaultChecked
           />
         </li>
         <li>
